@@ -45,6 +45,7 @@ function App() {
 
   return (
     <>
+      
       <form onSubmit={handleOnSubmit}>
         <header>
           <div className="logo" onClick={handleHome}>
@@ -59,6 +60,7 @@ function App() {
           onChange={handleOnChange}/>
         </header> 
       </form>
+      <h1 className="trending">Trending: </h1>
       <div className="movie-container">
         {
           movies.map(movie=>(

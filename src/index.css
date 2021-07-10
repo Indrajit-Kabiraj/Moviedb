@@ -9,6 +9,33 @@ body{
   color: white;
   font-family: 'poppins','sans-serif';
 }
+
+.trending{
+  justify-content:center;
+  margin: 20px 45%;
+}
+@media only screen and (max-width: 600px) {
+  .logo img{
+    height:30px;
+    width:30px;
+    margin: 0 5px;
+  }
+  .logo h3{
+    font-size: 10px;
+  }
+
+  .search{
+    background-color:rgb(17, 17, 17);
+    margin: 0 5px;
+    border: 2px solid rgb(36, 65, 228);
+    border-radius:20px;
+    padding:3px;
+    
+    color: white;
+    font-family: 'poppins','sans-serif';
+  
+  }
+}
 .movie-info{
   display: flex;
   justify-content: space-between;
@@ -67,8 +94,8 @@ header{
   margin: 0 5px;
   border: 2px solid rgb(36, 65, 228);
   border-radius:20px;
-  padding:10px;
-  
+  padding:3px;
+  text-align: center;
   color: white;
   font-family: 'poppins','sans-serif';
 
