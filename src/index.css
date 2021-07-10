@@ -1,13 +1,121 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(53, 51, 51);
+  color: white;
+  font-family: 'poppins','sans-serif';
+}
+.movie-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(17, 17, 17);
+  
+  padding:1rem;
+}
+.movie-info h3{
+  font-size:1rem;
+}
+.movie-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+.movie{
+  width: 250px;
+  margin:1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,1.5);
+  border-radius:3px;
+  position: relative;
+  overflow: hidden;
+}
+.movie img{
+  object-fit:cover;
+  width:100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header{
+  background-color:rgb(17, 17, 17);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content:space-between;
+  
+}
+
+.logo-img{
+  height:50px;
+  width:50px;
+  margin: 0 5px;
+}
+.logo{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.logo h3{
+  margin-left:10px;
+}
+.search{
+  background-color:rgb(17, 17, 17);
+  margin: 0 5px;
+  border: 2px solid rgb(36, 65, 228);
+  border-radius:20px;
+  padding:10px;
+  
+  color: white;
+  font-family: 'poppins','sans-serif';
+
+}
+
+
+.search:focus{
+  outline: none;
+}
+
+.tag{
+    background:rgb(36, 34, 34);
+    padding:0.5rem;
+    font-weight: bold;
+}
+
+.red{
+  color: red;
+}
+.orange{
+  color: rgb(240, 169, 37);
+}
+.green{
+  color: rgb(10, 173, 10);
+}
+
+.movie-over{
+  position: absolute;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  background-color: rgb(36, 65, 228);
+  color: rgb(211, 181, 50);
+  bottom:0;
+  left:0;
+  right: 0;
+  padding: 1rem;
+  overflow:auto;
+  max-height: 80%;
+  transform: translateY(102%);
+}
+.movie-over p{
+  font-size: 14px;
+}
+.movie-over h2{
+  font-size: 18px;
+}
+.movie:hover .movie-over{
+  transform: translateY(0%);
+  transition: transform .3s ease-in-out;
 }
