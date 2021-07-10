@@ -33,7 +33,10 @@ function App() {
       setMovieName('');
     }
   }
-
+  
+  const handleHome = ()=>{
+    getMovies(TRENDING_API);
+  }
 
   const handleOnChange = (e)=>{
     console.log(e.target.value);
@@ -44,7 +47,7 @@ function App() {
     <>
       <form onSubmit={handleOnSubmit}>
         <header>
-          <div className="logo">
+          <div className="logo" onClick={handleHome}>
             <img src = "https://image.flaticon.com/icons/png/512/2184/2184561.png" className="logo-img"></img>
             <h3>Movie-DB</h3>
           </div>
