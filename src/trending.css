@@ -1,0 +1,23 @@
+.Trending{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content:space-around;
+    align-items:center;
+}
+.pagetitle{
+    display: flex;
+    text-transform: uppercase;
+    justify-content:center;;
+    font-size:3vw;
+    padding:5px;
+    margin-top: 80px;
+    border-radius:50px;
+    color:white;
+}
+@media (max-width: 1000px){
+    .pagetitle{
+        font-size:5vw;
+    }
+}
