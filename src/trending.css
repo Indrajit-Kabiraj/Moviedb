@@ -1,9 +1,8 @@
 .Trending{
-    
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items:center;
 }
 .pagetitle{
@@ -16,8 +15,13 @@
     border-radius:50px;
     color:white;
 }
-@media (max-width: 1000px){
+@media (max-width: 700px){
     .pagetitle{
         font-size:5vw;
+    }
+    .trending{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
     }
 }

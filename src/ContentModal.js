@@ -62,7 +62,7 @@ useEffect(() => {
 
   return (
     <div>
-      <div onClick={fetchData} type="button" className="media" onClick={handleOpen}>
+      <div onClick={fetchData} className="media" onClick={handleOpen}>
         {children}
       </div>
       <Modal
