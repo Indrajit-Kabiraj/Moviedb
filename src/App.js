@@ -58,10 +58,10 @@ function App() {
       <div className="movie-container">
         <Container>
           <Switch>
-          <Route path='/' component={Trending} exact></Route>
-          <Route path='/movies' component={Favorites}></Route>
-          <Route path='/series' component={Recents}></Route>
-          <Route path='/search' component={WatchLater}></Route>
+          <Route path='MovieDb/' component={Trending} exact></Route>
+          <Route path='MovieDb/movies' component={Favorites}></Route>
+          <Route path='MovieDb/series' component={Recents}></Route>
+          <Route path='MovieDb/search' component={WatchLater}></Route>
           
           </Switch>
         </Container>
