@@ -32,16 +32,16 @@ export default function BottomNavBar() {
 
   useEffect(()=>{
     if(value==0){
-      history.push('/');
+      history.push('MovieDb/');
     }
     else if(value==1){
-      history.push('/movies');
+      history.push('MovieDb/movies');
     }
     else if(value==2){
-      history.push('/series');
+      history.push('MovieDb/series');
     }
     else{
-      history.push('/search');
+      history.push('MovieDb/search');
     }
   },[value]);
 
