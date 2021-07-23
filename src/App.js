@@ -53,24 +53,24 @@ function App() {
   // }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header></Header>
       <div className="movie-container">
         <Container>
-          <HashRouter>
-          <Route path='MovieDb/' component={Trending} exact></Route>
-          <Route path='MovieDb/movies' component={Favorites}></Route>
-          <Route path='MovieDb/series' component={Recents}></Route>
-          <Route path='MovieDb/search' component={WatchLater}></Route>
+          <Switch>
+            <Route path='/' component={Trending} exact></Route>
+            <Route path='/movies' component={Favorites}></Route>
+            <Route path='/series' component={Recents}></Route>
+            <Route path='/search' component={WatchLater}></Route>
           
-          </HashRouter>
+          </Switch>
         </Container>
         <BottomNavBar>
         </BottomNavBar>
       </div>
       
     
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
