@@ -3,7 +3,7 @@ import './index.css';
 import Movie from './Movie'
 import { Container } from "@material-ui/core";
 import BottomNavBar from './BottomNavBar';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch , HashRouter} from 'react-router-dom';
 import Header from './Header';
 import Trending from './Trending';
 import Favorites from './Favorites';
@@ -57,13 +57,13 @@ function App() {
       <Header></Header>
       <div className="movie-container">
         <Container>
-          <Switch>
+          <HashRouter>
           <Route path='MovieDb/' component={Trending} exact></Route>
           <Route path='MovieDb/movies' component={Favorites}></Route>
           <Route path='MovieDb/series' component={Recents}></Route>
           <Route path='MovieDb/search' component={WatchLater}></Route>
           
-          </Switch>
+          </HashRouter>
         </Container>
         <BottomNavBar>
         </BottomNavBar>
